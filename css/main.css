@@ -1426,6 +1426,9 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   max-width: 80%;
+  /* Max width for larger screens */
+  width: 90%;
+  /* Ensure it uses more width on smaller screens */
   opacity: 0;
   /* Mulai dengan tersembunyi */
   visibility: hidden;
@@ -1442,6 +1445,7 @@ body {
 
 .birthday-message h1 {
   font-size: 2.5rem;
+  /* Default size */
   color: #d4d4d4;
   /* Warna emas */
   margin: 0;
@@ -1449,16 +1453,58 @@ body {
 
 .birthday-message p {
   font-size: 1.2rem;
+  /* Default size */
   color: #d4d4d4;
+  /* Warna emas */
   margin-top: 10px;
 }
 
 .birthday-photo {
   width: 200px;
+  /* Fixed size for larger screens */
   height: 200px;
+  /* Fixed size for larger screens */
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 20px;
   border: 4px solid #178991;
   /* Border berwarna emas */
+}
+
+@media screen and (max-width: 600px) {
+  .birthday-message h1 {
+    font-size: 2rem;
+    /* Responsive size for heading */
+  }
+
+  .birthday-message p {
+    font-size: 1rem;
+    /* Responsive size for paragraphs */
+  }
+
+  .birthday-photo {
+    width: 150px;
+    /* Smaller size for the photo */
+    height: 150px;
+    /* Maintain aspect ratio */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .birthday-message h1 {
+    font-size: 1.5rem;
+    /* Further reduce heading size */
+  }
+
+  .birthday-message p {
+    font-size: 0.9rem;
+    /* Further reduce paragraph size */
+  }
+
+  .birthday-photo {
+    width: 120px;
+    /* Further reduce photo size */
+    height: 120px;
+    /* Maintain aspect ratio */
+  }
 }
