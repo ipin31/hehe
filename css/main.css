@@ -1471,7 +1471,7 @@ body {
   /* Border berwarna emas */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .birthday-message h1 {
     font-size: 2rem;
     /* Responsive size for heading */
@@ -1490,7 +1490,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
   .birthday-message h1 {
     font-size: 1.5rem;
     /* Further reduce heading size */
